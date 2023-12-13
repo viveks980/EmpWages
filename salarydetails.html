@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+
+  <style>
+    .chart-container {
+
+      max-width: 800px;
+
+      margin: 20px auto;
+    }
+
+    .chart-container {
+      max-width: 716px;
+      margin: 20px auto;
+    }
+  </style>
+
+
+  <title>Employee</title>
+</head>
+
+<body style="font-family: 'roboto', sans-serif; font-style: normal  ;">
+  <div import="includes/header.html"></div>
+
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body">
+      <div class="container-fluid">
+        <div class="row" id="">
+          <div class="col-md-12">
+            <div import="includes/bodyheader.html"></div>
+          </div>
+
+
+
+
+          <div class="container-fluid">
+            <h3 id="salarydetails"><u>Salary Details</u></h3>
+            
+            <div class="card" id="salarydetailtbl" style="margin: 0 40px; padding: 17px 25px;">
+
+              <div class="col-md-12">
+
+                <div class="row">
+
+
+
+                  <div class="col-md-4" id="annualctc">
+
+                    Annual CTC <span style="color:red;"> *</span>
+
+
+
+                  </div>
+
+                  <div class="col-md-5">
+
+                    <form>
+
+                      <div class="row">
+
+                        <div class="col-md-8 d-flex">
+
+
+
+                          <button class="mergebtn"> &#8377;
+
+                          </button>
+
+
+
+                          <input type="text"> <span> &nbsp; &nbsp;&nbsp; per year</span>
+                        </div>
+
+
+
+
+
+
+
+                      </div>
+
+                    </form>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <table class="table table-borderless">
+
+                <thead>
+
+
+
+                  <tr id="tblbelowline">
+
+                    <th id="fontnormal">SALARY COMPONENTS</th>
+
+
+
+                    <th id="fontnormal">CALCULATION TYPE</th>
+
+
+
+                    <th id="fontnormal">MONTHLY AMOUNT</th>
+
+
+
+                    <th id="fontnormal">ANNUAL AMOUNT</th>
+
+
+
+                  </tr>
+
+
+
+                </thead>
+
+                <tbody>
+
+
+
+                  <tr>
+
+
+
+                    <td><b>Earnings</b></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>Basic</td>
+
+                    <td>
+
+                      <div>
+
+                        <form class="d-flex">
+
+                          <input type="number">
+
+                          <button class="mergetblbtn">% of CTC
+
+                          </button>
+
+                        </form>
+
+                      </div>
+
+                    </td>
+
+                    <td><input type="text"></td>
+
+                    <td>0</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>House Rent Allowance</td>
+
+                    <td>
+
+                      <div>
+
+                        <form class="d-flex">
+
+                          <input type="number">
+
+                          <button class="mergetblbtn">% of Basic
+
+                          </button>
+
+                        </form>
+
+                      </div>
+
+                    <td><input type="text"></td>
+
+                    <td>0</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>Conveyance Allowance</td>
+
+                    <td>Fixed amount</td>
+
+                    <td><input type="text"></td>
+
+                    <td>0</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td>Fixed Allowance &#9432;<br><span id="subtitle">Monthly CTC-Sum of all other components</span>
+                    </td>
+
+                    <td>Fixed amount</td>
+
+                    <td>0</td>
+
+                    <td>0</td>
+
+                  </tr>
+
+                  <tr id="sumtotal">
+
+                    <td><b>Cost to Company</b></td>
+
+                    <td></td>
+
+                    <td>&#8377;0 </td>
+
+                    <td>&#8377;0 </td>
+
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+
+
+
+
+
+ 
+            </div>
+
+            <hr>
+
+            <a class="btn btn-primary " href="personalinfo.html" role="button" id="savebtn" style="margin-left: 4%;
+  ">Save and
+              Continue</a>
+            <button class="btn">Cancel</button>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/sidebar.js" ></script>
+
+</body>
+
+</html>

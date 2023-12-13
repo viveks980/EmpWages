@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <title>Employee</title>
+    <style>
+
+        body {
+  
+            /* display: flex; */
+  
+            justify-content: center;
+  
+            align-items: center;
+  
+            /* height: 100vh; */
+  
+            margin: 0;
+  
+            font-family: Arial, sans-serif;
+  
+        }
+  
+   
+  
+        .container {
+  
+            display: flex;
+  
+            align-items: center;
+  
+            width: 100%;
+  
+            max-width: 1000px;
+  
+            padding: 20px;
+  
+            border-bottom: 1px solid #ccc; /* Added border */
+  
+            border-radius: 5px;
+  
+            margin-bottom: 10px; /* Added margin for spacing */
+  
+        }
+  
+   
+  
+        .icon {
+  
+            flex: 0.3;
+  
+            text-align: left;
+  
+            /* padding: 10px; */
+  
+        }
+  
+   
+  
+        .text {
+  
+            flex: 2;
+  
+            /* text-align: center; */
+  
+            /* padding: 10px; */
+  
+        }
+  
+   
+  
+        .icon.right {
+  
+            flex: 1;
+  
+            text-align: right;
+  
+            padding: 10px;
+  
+        }
+  
+   
+  
+        .icon img {
+  
+            width: 30px;
+  
+            height: 30px;
+  
+        }
+  
+       
+  
+        .round {
+  
+            flex: 1;
+  
+            text-align: right;
+  
+            padding: 10px;
+  
+            position: relative;
+  
+  }
+  
+   
+  
+  .round label {
+  
+  background-color: #fff;
+  
+  border: 1px solid #ccc;
+  
+  border-radius: 50%;
+  
+  cursor: pointer;
+  
+  height: 28px;
+  
+  left: 0;
+  
+  position: absolute;
+  
+  top: 0;
+  
+  width: 28px;
+  
+  }
+  
+   
+  
+  .round label:after {
+  
+  border: 2px solid #fff;
+  
+  border-top: none;
+  
+  border-right: none;
+  
+  content: "";
+  
+  height: 6px;
+  
+  left: 7px;
+  
+  opacity: 0;
+  
+  position: absolute;
+  
+  top: 8px;
+  
+  transform: rotate(-45deg);
+  
+  width: 12px;
+  
+  }
+  
+   
+  
+  .round input[type="checkbox"] {
+  
+  visibility: hidden;
+  
+  }
+  
+   
+  
+  .round input[type="checkbox"]:checked + label {
+  
+  background-color:blueviolet;
+  
+  border-color: #ccc;
+  
+  }
+  
+   
+  
+  .round input[type="checkbox"]:checked + label:after {
+  
+  opacity: 1;
+  
+  }
+  
+   
+  
+   
+  
+    </style>
+  
+        <script>
+  
+           function myFunction() {
+  
+             var checkBox = document.getElementById("myCheck");
+  
+             var text = document.getElementById("text");
+  
+             var label = document.getElementsByClassName("round");
+  
+             if (checkBox.checked == true){
+  
+               text.style.display = "block";
+  
+               text.style.color = "black";
+  
+   
+  
+             } else {
+  
+                text.style.display = "none";
+  
+             }
+  
+           }
+  
+           </script>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <div import="includes/bodyheader.html"></div>
+                </div>
+                <div class="col-md-12">
+                    <h3 id="heading"><u>Personal Info</u></h3>
+                 
+                </div>
+                <br>
+                <br>
+                <br>
+                <h4><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    
+            
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How would you like to pay this employee?</b><span style="color: red;">*</span></h4>
+            
+               
+            
+                <!-- Container 1 -->
+            
+                <div class="container">
+            
+                    <div class="icon">
+            
+                        <img src="/assets/img/Group 322.svg" alt="" style="height: 50px; width: 50px;">
+            
+                    </div>
+            
+                    <div class="text">
+            
+                        <h5>Direct Deposit (Automated Process)</h5>
+            
+                        <p><span>Initiate payment in Employee Payroll once the pay run is approved</span></p>
+            
+                    </div>
+            
+                    <div class="ml-auto">
+            
+                        <a href="configurenow.html" id="confi"  style="color: blue; text-decoration: none;">Configure Now</a>
+            
+                    </div>
+            
+                </div>
+            
+               
+            
+                <!-- Container 2 -->
+            
+                <div class="container">
+            
+                    <div class="icon">
+            
+                        <img src="/assets/img/bank Deposit.svg" alt="" style="height: 50px; width: 50px; color: #ccc;">
+            
+                    </div>
+            
+                    <div class="text">
+            
+                        <h5>Bank Transfer (Manual Process)</h5>
+            
+                        <p><span>Download Bank Advice and process the payment through your bank's website</span></p>
+            
+                    </div>
+            
+                    <div class="ml-auto">
+            
+                        <div class="round">
+            
+                            <input type="checkbox" id="myCheck" onclick="myFunction()"  / >
+            
+                            <label for="myCheck"></label>
+            
+                        </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <!-- <div id="text" style="display: none;">
+            
+               
+            
+                      <form>
+            
+                        <div style="display: flex;flex:1; flex-direction: column;">
+            
+                         <label for="accountHolder" >Account Holder Name:</label>
+            
+                         <input type="text" id="accountHolder" name="accountHolder">
+            
+                        </div>
+            
+                         <label for="bankName">Bank Name:</label>
+            
+                         <input type="text" id="bankName" name="bankName">
+            
+                         <label for="accountNumber">Account Number:</label>
+            
+                         <input type="text" id="accountNumber" name="accountNumber">
+            
+                         <label for="reenterAccountNumber">Reenter Account Number:</label>
+            
+                         <input type="text" id="reenterAccountNumber" name="reenterAccountNumber">
+            
+                         <label for="ifsc">IFSC Code:</label>
+            
+                         <input type="text" id="ifsc" name="ifsc">
+            
+                         <label for="accountType">Account Type:</label>
+            
+                         <input type="text" id="accountType" name="accountType">
+            
+                     </form>
+            
+                 
+            
+                  </div> -->
+            
+                  <div id = "text" class="container mt-3">
+            
+                   
+            
+                    <form action="/action_page.php">
+            
+                      <div class="mb-3 mt-3">
+            
+                        <label for="accountHolder">Account Holder Name<span style="color: red;">*</span></label>
+            
+                        <input type="accountHolder" class="form-control" id="accountHolder" placeholder="Enter Account Holder Name" name="accountHolder" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+            
+                      </div>
+            
+                      <div class="mb-3">
+            
+                        <label for="bankName">Bank Name<span style="color: red;">*</span></label>
+            
+                        <input type="bankName" class="form-control" id="bankName" placeholder="Enter Bank Name" name="bankName" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+            
+                      </div>
+            
+                      <div class="row">
+            
+                        <div class="col">
+            
+                        <label for="accountNumber">Account Number<span style="color: red;">*</span></label>
+            
+                          <input type="accountNumber" class="form-control" placeholder="Enter Account Number" name="accountNumber" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+            
+                        </div>
+            
+                        <div class="col">
+            
+                        <label for="reenterAccountNumber">Re-enter Account Number<span style="color: red;">*</span></label>
+            
+                          <input type="reenterAccountNumber" class="form-control" placeholder="Re-enterAccountNumber" name="reenterAccountNumber"style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+            
+                        </div>
+            
+                    </div>
+            
+                    <div class="row">
+            
+                        <div class="col">
+            
+                        <label for="ifsc">IFSC Code<span style="color: red;">*</span></label>
+            
+                          <input type="ifsc" class="form-control" placeholder="AAAA00000000" name="ifsc" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+            
+                        </div>
+            
+                        <div class="col">
+            
+                        <label for="accountType">Account Type:<span style="color: red;">*</span></label><br>
+            
+                       
+            
+                          <input type="radio" >
+            
+                          <label for="accountType">Current</label>
+            
+             
+            
+                          <input type="radio" >
+            
+                          <label for="accountType">Savings</label>
+            
+                        </div>
+            
+                    </div>
+            
+                   
+            
+                   
+            
+                    </form>
+            
+                  </div>
+            
+                 
+            
+               
+            
+                <!-- Container 3 -->  
+            
+                <div class="container">
+            
+                    <div class="icon">
+            
+                        <img src="/assets/img/Cheque.svg" alt="" style="height: 50px; width: 50px;">
+            
+                    </div>
+            
+                    <div class="text">
+            
+                        <h5>Cheque</h5>
+            
+                    </div>
+            
+                    <div class="ml-auto">
+            
+                        <div class="round">
+            
+                            <input type="checkbox" id="checkbox2" onchange="toggleBankForm(3)"  />
+            
+                            <label for="checkbox2"></label>
+            
+                        </div>
+            
+                    </div>
+            
+                    <div class="bank-form" style="display: none;">
+            
+                        <!-- Bank form content for Container 3 -->
+            
+                        <!-- Include your bank form elements here -->
+            
+                    </div>
+            
+                </div>
+                   
+         
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/graph.js"></script>
+        <script src="assets/js/syncro.min.js"></script>
+        <script src="assets/js/PaymentStatus.js"></script>
+        <script src="assets/js/sidebar.js" ></script>
+</body>
+
+</html>

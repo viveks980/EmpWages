@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+            <div class="container-fluid">
+                <div class="row" id="">
+                    <div class="col-md-12">
+                        <div import="includes/bodyheader.html"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="btn-group dropend">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="empsumm">
+                              <b >Employee Summary</b>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">All Employees</a></li>
+                              <li><a class="dropdown-item" href="#">Active Employees</a></li>
+                              <li><a class="dropdown-item" href="#">Incomplete Employees</a></li>
+                              <li><a class="dropdown-item" href="#">Exited Employees</a></li>
+                            </ul>
+                          </div>
+                    </div>
+
+                    <div class="col-6 text-end"><a href="addemployee.html">
+                        <button type="button" id="btnemp"><span>Add Employee</span></button></a>
+
+                        <button type="button" id="btndot">
+                            <img src="/assets/img/threedot.svg" />
+                        </button>
+                    </div>
+                  
+                    <div class="col-md-12" >
+                        <table class="table" style="margin: 11px 0px 0 15px;">
+                            <thead class="headsec">
+                                <tr>
+                                    <th><input type="checkbox" /></th>
+
+                                    <th>Employees</th>
+
+                                    <th>Employees ID/City</th>
+
+                                    <th>Employees Work Email</th>
+
+                                    <th>Gross Salary</th>
+
+                                    <th>Taxes</th>
+
+                                    <th>Net Salary</th>
+
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+
+                                    <td>
+                                        Jenny Wilson<br />
+
+                                        <span class="disabled">Product Designer</span>
+                                    </td>
+
+                                    <td>1201/<span class="disabled">Mumbai</span></td>
+
+                                    <td>jennywilson@cylsys.com</td>
+
+                                    <td>10,300.00</td>
+
+                                    <td><span class="tax">-100.31</span></td>
+
+                                    <td>10,209.69</td>
+
+                                    <td><span class="btntype">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+
+                                    <td>
+                                        Jenny Wilson<br />
+
+                                        <span class="disabled">Product Designer</span>
+                                    </td>
+
+                                    <td>1201/<span class="disabled">Mumbai</span></td>
+
+                                    <td>jennywilson@cylsys.com</td>
+
+                                    <td>10,300.00</td>
+
+                                    <td><span class="tax">-100.31</span></td>
+
+                                    <td>10,209.69</td>
+
+                                    <td><span class="btnpending">Pending</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+
+                                    <td>
+                                        Jenny Wilson<br />
+
+                                        <span class="disabled">Product Designer</span>
+                                    </td>
+
+                                    <td>1201/<span class="disabled">Mumbai</span></td>
+
+                                    <td>jennywilson@cylsys.com</td>
+
+                                    <td>10,300.00</td>
+
+                                    <td><span class="tax">-100.31</span></td>
+
+                                    <td>10,209.69</td>
+
+                                    <td><span class="btntype">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+
+                                    <td>
+                                        Jenny Wilson<br />
+
+                                        <span class="disabled">Product Designer</span>
+                                    </td>
+
+                                    <td>1201/<span class="disabled">Mumbai</span></td>
+
+                                    <td>jennywilson@cylsys.com</td>
+
+                                    <td>10,300.00</td>
+
+                                    <td><span class="tax">-100.31</span></td>
+
+                                    <td>10,209.69</td>
+
+                                    <td><span class="btntype">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+
+                                    <td>
+                                        Jenny Wilson<br />
+
+                                        <span class="disabled">Product Designer</span>
+                                    </td>
+
+                                    <td>1201/<span class="disabled">Mumbai</span></td>
+
+                                    <td>jennywilson@cylsys.com</td>
+
+                                    <td>10,300.00</td>
+
+                                    <td><span class="tax">-100.31</span></td>
+
+                                    <td>10,209.69</td>
+
+                                    <td><span class="btntype">Paid</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+
+                                    <td>
+                                        Jenny Wilson<br />
+
+                                        <span class="disabled">Product Designer</span>
+                                    </td>
+
+                                    <td>1201/<span class="disabled">Mumbai</span></td>
+
+                                    <td>jennywilson@cylsys.com</td>
+
+                                    <td>10,300.00</td>
+
+                                    <td><span class="tax">-100.31</span></td>
+
+                                    <td>10,209.69</td>
+
+                                    <td><span class="btntype">Paid</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+           
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js" ></script>
+</body>
+
+</html>
